@@ -43,16 +43,7 @@ void drawOutlineOfLights() {
     ellipse(width/2, height/2, 50, 50); //middle
     fill(0, 255, 0);
     ellipse(width/2, height/2 + 65, 50, 50);
-    states = 3;
+    states = 1;
   } //bottom
-  else {
-    if (millis()>lightChangeGreenToYellow)
-      fill(255, 0, 0);
-    ellipse(width/2, height/2 - 65, 50, 50); //top
-    fill(99, 250, 255);
-    ellipse(width/2, height/2, 50, 50); //middle
-    fill(0, 175, 0);
-    ellipse(width/2, height/2 + 65, 50, 50);
-states = 1;  
-} //bottom
+  
 }
